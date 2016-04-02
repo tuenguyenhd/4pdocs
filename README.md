@@ -61,7 +61,7 @@
 			`answers`: Array các câu trả lời để người dùng chọn, đối với câu trả lời người dùng tự điền vào thì giá trị sẽ là trống
 		}
 		```
-- Survey_Log: Bản này để lưu kết quả các câu trả lời survey của user. Sau khi user trả lời xong, tạo bảng này với các pointer `survey_id`, `owner` trỏ vào bảng `Survey` và bảng `User`. Kết quả lưu dưới dạng array number các kết quả trả lời vào cột `result`. Ví dụ :
+- Survey_Log: Bản này để lưu kết quả các câu trả lời survey của user. Sau khi user trả lời xong, tạo bảng này với các pointer `survey_id`, `owner` trỏ vào bảng `Survey` và bảng `User`. Kết quả lưu dưới dạng array number các kết quả trả lời vào cột `result`. Ví dụ : [Xem trong đây](https://www.parse.com/apps/people-service-v1/collections#class/Survey_Log)
 	- Các câu hỏi trong servey là: 
 		- `Gà có trước hay trứng có trước?`
 		- Trả lời:
