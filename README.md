@@ -73,7 +73,9 @@
 		- Trả lời:
 			- `Đúng`
 			- `Sai`
-	- Ví dụ user trả lời cho câu hỏi 1 là `Gà`, câu hỏi 2 là `Sai`. Vậy bảng `result` trong `Survey_Log` cần điền là array của các kết trả lời `[0, 1]` trong đó `0` là index của câu trả lời `Gà`, `1` là index của câu trả lời `Sai`.
+	- Ví dụ user trả lời cho câu hỏi 1 là `Gà`, câu hỏi 2 là `Sai`. Vậy bảng `result` trong `Survey_Log` cần điền là array của các kết trả lời `
+	[{"index":0,"value":"Gà"},
+	{"index":1,"value":"Sai"}]` trong đó `0` là index của câu trả lời `Gà`, `1` là index của câu trả lời `Sai`.
 	
 ## Task iOS
 - Khi user click vào "Hồ sơ" -> Hiện ra form login, hoặc sau khi user tạo xong 1 `Report` thì alert lên cho nó là "Bạn có muốn đăng nhập để chúng tôi xử lý dễ dàng hơn?"- Chọn Có - Chọn Không. 
