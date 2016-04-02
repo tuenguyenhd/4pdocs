@@ -51,7 +51,30 @@
 - SupportLocation: Hiển thị trong phần liên hệ của (Xem app iOS)
 	- Hiển thị map các thông tin hỗ trợ như thùng rác, nhà vệ sinh ko buồn đái đái bậy lại mất tièn
 - SupportNumber: Như ở trên cho xem số 113 còn gọi (Xem app iOS)
-
+- Survey: Bảng này để trả về các câu hỏi để user trả lời trong app
+	- questions: Bảng các câu hỏi có dạng array
+	- Mỗi 1 câu hỏi có dạng json string format như sau:
+		
+		```
+		{
+			`question`: String - Câu hỏi
+			`answers`: Array các câu trả lời để người dùng chọn, đối với câu trả lời người dùng tự điền vào thì giá trị sẽ là trống
+		}
+		```
+- Survey_Log: Bản này để lưu kết quả các câu trả lời survey của user. Sau khi user trả lời xong, tạo bảng này với các pointer `survey_id`, `owner` trỏ vào bảng `Survey` và bảng `User`. Kết quả lưu dưới dạng array number các kết quả trả lời vào cột `result`. Ví dụ :
+	- Các câu hỏi trong servey là: 
+		- `Gà có trước hay trứng có trước?`
+		- Trả lời:
+			- `Gà`
+			- `Trứng`
+			- "" (Trống thì ở dưới app sẽ hiện textfield user tự điền)
+			
+		- `Hà Nội bẩn hơn Sài Gòn?`		
+		- Trả lời:
+			- `Đúng`
+			- `Sai`
+	- Ví dụ user trả lời cho câu hỏi 1 là `Gà`, câu hỏi 2 là `Sai`. Vậy bảng `result` trong `Survey_Log` cần điền là array của các kết trả lời `[0, 1]` trong đó `0` là index của câu trả lời `Gà`, `1` là index của câu trả lời `Sai`.
+	
 ## Task iOS
 - Khi user click vào "Hồ sơ" -> Hiện ra form login, hoặc sau khi user tạo xong 1 `Report` thì alert lên cho nó là "Bạn có muốn đăng nhập để chúng tôi xử lý dễ dàng hơn?"- Chọn Có - Chọn Không. 
 - Form login yêu cầu có các trường sau:
