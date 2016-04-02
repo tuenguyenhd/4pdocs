@@ -53,7 +53,7 @@
 - SupportNumber: Như ở trên cho xem số 113 còn gọi (Xem app iOS)
 - Survey: Bảng này để trả về các câu hỏi để user trả lời trong app
 	- questions: Bảng các câu hỏi có dạng array
-	- Mỗi 1 câu hỏi có dạng json string format như sau:
+	- Mỗi 1 câu hỏi có dạng json string format như sau: [Xem trong đây](https://www.parse.com/apps/people-service-v1/collections#class/Survey)
 		
 		```
 		{
