@@ -51,6 +51,7 @@
 - SupportLocation: Hiển thị trong phần liên hệ của (Xem app iOS)
 	- Hiển thị map các thông tin hỗ trợ như thùng rác, nhà vệ sinh ko buồn đái đái bậy lại mất tièn
 - SupportNumber: Như ở trên cho xem số 113 còn gọi (Xem app iOS)
+
 ## Task iOS
 - Khi user click vào "Hồ sơ" -> Hiện ra form login, hoặc sau khi user tạo xong 1 `Report` thì alert lên cho nó là "Bạn có muốn đăng nhập để chúng tôi xử lý dễ dàng hơn?"- Chọn Có - Chọn Không. 
 - Form login yêu cầu có các trường sau:
